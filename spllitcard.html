@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;   
+            
+        }
+
+        
+        .card{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+           
+            width: 300px;
+            height: 400px;
+          
+            background: #7ce69a;
+            transform-style: preserve-3d;
+            transform: translate(-50%,-50%)perspective(2000px);
+            box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),0 20px 100px rgba(0, 0, 0, 0.5);
+            transition: 1s;
+        }
+        .card:hover{
+            left: 60%;
+        }
+        @media (max-width: 800px){
+        .card{
+            position: absolute;
+            top: 50%;
+            left: 55%;
+           
+            width: 200px;
+            height: 300px;
+          
+            background: #ffffff;
+            transform-style: preserve-3d;
+            transform: translate(-50%,-50%)perspective(2000px);
+            box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),0 20px 100px rgba(0, 0, 0, 0.5);
+            transition: 1s;
+        }
+        }
+        @media (max-width: 800px){
+            
+            .card:hover{
+            left: 60%;
+        } 
+        }
+        @media (max-width: 800px){
+            .imgbox img{
+                width: 200px;
+                height: 300px;
+            } 
+        }
+
+        .card:hover{
+            transform: translate(-50%,-50%)perspective(2000px)rotate(-1deg);
+            box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),0 10px 100px rgba(0, 0, 0, 0.5);
+        }
+        .card:before{
+            content: " ";
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #475b02;
+            transform-origin: bottom;
+            transform: skewX(-45deg);
+        }
+        .card:after{
+            content: " ";
+            position: absolute;
+            top: 0px;
+            right: -5px;
+            height: 100%;
+            width: 5px;
+            background: #c2ed35;
+            transform-origin: left;
+            transform: skewy(-45deg);
+        }
+        .card .imgbox{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-origin: left;
+            transition: 1s;
+        }
+        .card:hover .imgbox
+        {
+            transform: rotateY(-135deg);
+        }
+        .card .details{
+          position: absolute;  
+          top: 0;
+          left: 0;
+          box-sizing: border-box;
+           padding: 20px;
+           z-index: -1;
+          
+        }
+        #card{
+            top: 850px;
+            
+        }
+        #card1{
+            top: 1330px;
+        }
+
+
+
+
+
+
+       
+    </style>
+</head>
+<body style="background-color: rgb(181, 225, 170);">
+
+
+  
+
+
+    <div class="book">
+    <div class="card">
+<div class="imgbox">
+    <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12923839_b_v9_aa.jpg" alt="" height="400px" width="300px">
+</div>
+<div class="details">
+    <h2>My Hero Acadamia</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nemo.</p>
+    <button style="background-color: #475b02;padding: 10px;margin-top: 10px;border-radius: 20px;color: aliceblue;">BUYNOW</button>
+
+</div>
+
+    </div>
+    <div id="card" class="card">
+        
+        <div class="imgbox">
+            <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p19149543_b_v9_aa.jpg" alt="" height="400px" width="300px">
+        </div>
+        <div class="details">
+            <h2>Attack On Titan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nemo.</p>
+            <button style="background-color: #475b02;padding: 10px;margin-top: 10px;border-radius: 20px;color: aliceblue;">BUYNOW</button>
+        </div>
+        
+            </div>
+
+           
+        
+                </div>
+
+
+
+
+        
+</body>
+</html>
